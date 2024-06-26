@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+.box {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+img {
+    margin: 5%;
+    width: 25%;
+    border-radius: 50%;
+}
+
+h4 {
+    color: white;
+}
+
+h5 {
+    color: #c5f82a;
+}
+
+p {
+    color: white;
+}
+
+.custom-width {
+    margin: 2%;
+    width: 100%; /* Ubah lebar ke 100% untuk responsif */
+    max-width: 350px; /* Maksimum lebar tetap 350px */
+}
+
+.custom-width:hover {
+    background-color: #c5f82a;
+    color: #000; /* Sesuaikan warna teks jika perlu */
+}
+
+  /* Tambahkan media queries untuk responsif */
+@media (max-width: 768px) {
+    .custom-width {
+      width: 100%; /* Lebar tombol menjadi 100% pada layar kecil */
+      max-width: none; /* Hapus batas maksimum lebar */
+    }
+}
+
+@media (max-width: 576px) {
+    img {
+      width: 50%; /* Perbesar gambar pada layar yang lebih kecil */
+    }
+}
